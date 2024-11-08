@@ -1,0 +1,54 @@
+:root {
+    --primary-color:#D7292E;
+;
+}
+
+
+body {
+    font-family:'Nunito', sans-serif;
+}
+
+/* ELEMENTS */
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Goldman', sans-serif; color:var(--primary-color); font-weight:700;
+}
+
+/* CLASSES */
+.container { max-width:1100px; }
+
+
+
+
+section { display:flex; position:relative; justify-content:center; align-items:center; width:100%; min-height:100px; }
+
+.site-footer {
+    strong { color: var(--primary-color); display:block; line-height:1.2em; margin-bottom:.6em; height:1.4em; display:block; }
+    b { display:block; }
+    small { line-height:1.2em; display:inline-block; }
+}
+.soc-icons {
+    a { display:inline-block; margin:5px; padding:4px; width:24px; height:24px; background-color:var(--primary-color); color:#fff; text-decoration:none; border-radius:3px;
+        i { display:flex; height:100%; width: 100%; justify-content: center; align-items: center; }
+    }
+}
+.copyr { background-color:var(--primary-color); }
+
+
+.orn {
+    position:absolute; height:100%; width:100%; top:0; left:0; z-index:1;
+    & > img { max-width:210px; }
+    .orn-start,
+    .orn-end { position:absolute; left:0; bottom:0; }
+    .orn-end { left:unset; right:0; bottom:unset; top:0; }
+    .orn-start-2 { max-width:160px; }
+}
+
+.orn + .container { z-index:5; }
+
+
+@media all and (max-width: 768px) {
+    .site-footer strong.empty { display:none; }
+    .orn { display:none; }
+}
+
+
