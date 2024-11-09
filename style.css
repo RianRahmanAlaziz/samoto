@@ -41,9 +41,15 @@ section { display:flex; position:relative; justify-content:center; align-items:c
     .orn-end { position:absolute; left:0; bottom:0; }
     .orn-end { left:unset; right:0; bottom:unset; top:0; }
     .orn-start-2 { max-width:160px; }
+    .logo {
+        position:absolute; 
+        left:5%; 
+        top:5%;
+    
+    }
 }
 
-.orn + .container { z-index:5; }
+.orn + .container  { z-index:5; }
 
 
 @media all and (max-width: 768px) {
